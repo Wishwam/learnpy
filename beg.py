@@ -1,47 +1,86 @@
-# print(10+3)
-#print(10-3)
-#print(10*3)
-#print(10/3)
-#print(10//3)
-#print(10**3)
-#print(10%2==0 or 10%5==0)
-#print(not(10>20))
+#basic program 
+x=5
+print(x)
+c="Shinchan"
+print(c)
 
-#identity operator 
-   # x=10
-   # y=20
-   # print(x is y)
+#assing multiple values in variable
+x,y,z="apple","banana","mango"
+print(x)
+print(y)
+print(z)
+
+fruits=["apple","mango","litchi"]
+x,y,z=fruits
+print(fruits)
+print(x)
+print(y)
+print(z)
+
+#global variable:are the variable that are created outside the func and used everywhere
+x="favorite"
+def myfunc():
+    print("Virat is my "+ x +" batter")
+myfunc()
+
+
+
+#arithematic operators
+print(10+3)
+print(10-3)
+print(10*3)
+print(10/3)
+print(10//3)
+print(10**3)
+print(10%3==0)
+print(not(10>20))
+
+# identity operator 
+x=10
+y=20
+print(x is y)
 
 #membership operator #in #notin
 
+# list
+list1 = [1,2,3,"wtf",True]
+print(list1)
+#datatype of list
+list2=["a","b","c"]
+print(type(list2))
+#indexing(in indexing the end value is not counted)
+list3=["Virat","Root","Smith","Kane"]
+print(list3[1:2])
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:5])
+#inserting new value
+list3=["Virat","Root","Smith","Kane"]
+list3.insert(2,"Rohit")
+print(list3)
+#append method is used to add item at last
+list3=["Virat","Root","Smith","Kane"]
+list3.append("Rohit")
+print(list3)
+#extend method is use to add two list
+list3=["Virat","Root","Smith","Kane"]
+list4=["Jasprit","Cummins","Hazlewood","Starc"]
+list3.extend(list4)
+print(list3)
+# list5=list3+list4
+# print(list5)
 
-#data structure/collection 
-#list
-# list1 = [1,2,3,"wtf",True]
-# print(list1)
-# list1[3]=False
-# print(list1)
-# list1.append("qwerty")
-# print(list1)
-# list1.insert(2,"mango")
-# print(list1)
-# list1.extend(["dinosaur","godzilla"])
-# print(list1)
-# list1.remove("mango")
-# print(list1)
-# list1.pop(3)
-# print(list1)
-# print(len(list1))
-# print(list1.index("godzilla"))
-# list1.clear()
-# fruits = ["apple","mango","papaya","grapes"]
-# num =[18,17,33,93]
-# fruits.sort()
-# num.sort()
-# print(fruits)
-# print(num)
-# fruits.reverse()
-# print(fruits)
+#removing items
+list3=["Virat","Root","Smith","Kane"]
+list3.remove("Kane")
+print(list3)
+list3.pop(2)
+print(list3)
+#sorting
+list4=["Jasprit","Cummins","Hazlewood","Starc"]
+list4.sort()
+print(list4)
+list4.sort(reverse=True)
+print(list4)
 
 
 #turple
@@ -128,18 +167,18 @@
 # print(students["101"]["name"]) 
 
 #string
-s1="hello "
-s2='bob\'s birthday'
-s3="""this is multiline string"""
-print(s1)
-print(s2)
-print(s3)
+# s1="hello "
+# s2='bob\'s birthday'
+# s3="""this is multiline string"""
+# print(s1)
+# print(s2)
+# print(s3)
 # print(type(s1))
 # print(type(s2))
 # print(type(s3))
 
-print(s1 + s2)
-print(s1)
-print(s2)
+# print(s1 + s2)
+# print(s1)
+# print(s2)
 
-print(len(s3))
+# print(len(s3))

@@ -154,54 +154,54 @@ set=set3&set4
 print(set)
 
 
-# square = {x**2 for x in range(1,11)}
-# print(square)
+square = {x**2 for x in range(1,11)}
+print(square)
 
-# frozen=frozenset([1,2,3])
-# #frozenset.add(4)
+frozen=frozenset([1,2,3])
+#frozenset.add(4)
 
 #dictionary
-# student = {
-#     "name":"Ben Stokes",
-#     "age":36,
-#     "city":"England"
-# }
-# print(student)
+student = {
+    "name":"Ben Stokes",
+    "age":36,
+    "city":"England"
+}
+print(student)
 
-# person =dict(name="Pope",college="ECB")
-# print(person)
+person =dict(name="Pope",college="ECB")
+print(person)
 
-# print(student["name"])
-# print(student.get("name"))
+print(student["name"])
+print(student.get("name"))
 
-# student["profession"]="Cricketer"
-# print(student)
+student["profession"]="Cricketer"
+print(student)
 
-# student["city"]="Leeds"
-# print(student)
+student["city"]="Leeds"
+print(student)
 
-# del student["city"]
-# print(student)
+del student["city"]
+print(student)
 
-# students ={
-#     "101":{"name":"shinchan","grade":"A"},
-#     "102":{"name":"haggimaru","grade":"B"}
-# }
-# print(students["101"]["name"]) 
+students ={
+    "101":{"name":"shinchan","grade":"A"},
+    "102":{"name":"haggimaru","grade":"B"}
+}
+print(students["101"]["name"]) 
 
-#string
-# s1="hello "
-# s2='bob\'s birthday'
-# s3="""this is multiline string"""
-# print(s1)
-# print(s2)
-# print(s3)
-# print(type(s1))
-# print(type(s2))
-# print(type(s3))
+# string
+s1="hello "
+s2='bob\'s birthday'
+s3="""this is multiline string"""
+print(s1)
+print(s2)
+print(s3)
+print(type(s1))
+print(type(s2))
+print(type(s3))
 
-# print(s1 + s2)
-# print(s1)
-# print(s2)
+print(s1 + s2)
+print(s1)
+print(s2)
 
-# print(len(s3))
+print(len(s3))

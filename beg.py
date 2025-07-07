@@ -161,47 +161,62 @@ frozen=frozenset([1,2,3])
 #frozenset.add(4)
 
 #dictionary
-student = {
-    "name":"Ben Stokes",
-    "age":36,
-    "city":"England"
+cars={
+    "Brand":"Ford",
+    "Type":"Sports",
+    "Model":"M4",
+    "Year":2012,
+    "Color":["Red","Black","Blue","Grey"]
 }
-print(student)
-
+print(cars)
+print(len(cars))
 person =dict(name="Pope",college="ECB")
 print(person)
 
-print(student["name"])
-print(student.get("name"))
-
-student["profession"]="Cricketer"
-print(student)
-
-student["city"]="Leeds"
-print(student)
-
-del student["city"]
-print(student)
-
-students ={
-    "101":{"name":"shinchan","grade":"A"},
-    "102":{"name":"haggimaru","grade":"B"}
+#constructor
+thisdict = dict(name = "John", age = 36, country = "Norway")
+print(thisdict)
+cars={
+    "Brand":"Ford",
+    "Type":"Sports",
+    "Model":"M4",
+    "Year":2012,
+    "Color":["Red","Black","Blue","Grey"]
 }
-print(students["101"]["name"]) 
+x=cars["Brand"]
+print(x)
+y=cars["Type"]
+print(y)
+x=cars.get("Model")
+print(x)
+x=cars.values()
+print(x)
+x=cars.items()
+print(x)
+cars["Year"]=2016
+print(x)
+cars.update({"Year":2015})
+print(cars)
 
-# string
-s1="hello "
-s2='bob\'s birthday'
-s3="""this is multiline string"""
-print(s1)
-print(s2)
-print(s3)
-print(type(s1))
-print(type(s2))
-print(type(s3))
+# students ={
+#     "101":{"name":"shinchan","grade":"A"},
+#     "102":{"name":"haggimaru","grade":"B"}
+# }
+# print(students["101"]["name"]) 
 
-print(s1 + s2)
-print(s1)
-print(s2)
+# # string
+# s1="hello "
+# s2='bob\'s birthday'
+# s3="""this is multiline string"""
+# print(s1)
+# print(s2)
+# print(s3)
+# print(type(s1))
+# print(type(s2))
+# print(type(s3))
 
-print(len(s3))
+# print(s1 + s2)
+# print(s1)
+# print(s2)
+
+# print(len(s3))

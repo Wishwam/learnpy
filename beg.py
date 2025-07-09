@@ -198,25 +198,25 @@ print(x)
 cars.update({"Year":2015})
 print(cars)
 
-# students ={
-#     "101":{"name":"shinchan","grade":"A"},
-#     "102":{"name":"haggimaru","grade":"B"}
-# }
-# print(students["101"]["name"]) 
+students ={
+    "101":{"name":"shinchan","grade":"A"},
+    "102":{"name":"haggimaru","grade":"B"}
+}
+print(students["101"]["name"]) 
 
-# # string
-# s1="hello "
-# s2='bob\'s birthday'
-# s3="""this is multiline string"""
-# print(s1)
-# print(s2)
-# print(s3)
-# print(type(s1))
-# print(type(s2))
-# print(type(s3))
+# string
+s1="hello "
+s2='bob\'s birthday'
+s3="""this is multiline string"""
+print(s1)
+print(s2)
+print(s3)
+print(type(s1))
+print(type(s2))
+print(type(s3))
 
-# print(s1 + s2)
-# print(s1)
-# print(s2)
+print(s1 + s2)
+print(s1)
+print(s2)
 
-# print(len(s3))
+print(len(s3))

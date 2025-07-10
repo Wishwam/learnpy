@@ -49,5 +49,69 @@ match day:
       print("day4")
    case _:
       print("zero day")
+#using | 
+day=3
+match day:
+   case 1|2|3|4:
+      print("Good day")
+   case 5|6|7|8:
+      print("Good night")
+#practice
+# age = int(input("Enter you age: "))
+# if age>13:
+#    print("Child")
+# if age<= 13 and age >=19:
+#    print("Teen")
+# if age >20:
+#    print("Adult")
 
-    
+#while loop
+i=1
+while i<6:
+   print(i)
+   i+=1 #increment same as i=i+1
+#break
+i=1
+while i<6:
+   print(i)
+   if i==4:
+    break
+   i+=1 
+#continue 
+# i=0
+# while i<6:
+#    print(i)
+#    if i==3:
+#       continue
+#    print(i)
+# #for loop 
+for i in range(5):
+   print("GOd's Plan",i)
+
+fruits=["apple","banana","kiwi"]
+for x in fruits:
+   print(x)
+
+fruits=["apple","banana","cherry","papaya","mango"]
+for x in fruits:
+   print(x)
+   if x=="cherry":
+      break
+
+for i in range(1,6):
+   print(i)
+
+#printing num 1-10
+for i in range(1,11):
+   print(i)
+
+#practice
+n=int(input("enter any num: "))
+i=1
+total=0
+while i<=n:
+   total += i
+   i += 1
+print("the sum of number from 1 to",n,"is",total)
+
+

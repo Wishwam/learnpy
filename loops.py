@@ -113,5 +113,3 @@ while i<=n:
    total += i
    i += 1
 print("the sum of number from 1 to",n,"is",total)
-
-

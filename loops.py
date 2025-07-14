@@ -113,3 +113,27 @@ while i<=n:
    total += i
    i += 1
 print("the sum of number from 1 to",n,"is",total)
+#for finding factorial
+def factorial(n):
+    if n < 0:
+        return "Factorial is not defined for negative numbers."
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+# Example usage
+print(factorial(6)) 
+
+def fibonacci(n):
+    fib_sequence = []
+    a, b = 0, 1
+    for x in range(n):
+        fib_sequence.append(a)
+        a, b = b, a + b
+    return fib_sequence
+
+# Example usage
+terms = int(input("Enter the number of terms: "))
+print(f"Fibonacci sequence up to {terms} terms:")
+print(fibonacci(terms))

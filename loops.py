@@ -101,53 +101,72 @@ for x in fruits:
 for i in range(1,6):
    print(i)
 
-#printing num 1-10
-for i in range(1,11):
-   print(i)
+# #printing num 1-10
+# for i in range(1,11):
+#    print(i)
 
-#practice
-n=int(input("enter any num: "))
-i=1
-total=0
-while i<=n:
-   total += i
-   i += 1
-print("the sum of number from 1 to",n,"is",total)
-#for finding factorial
-def factorial(n):
-    if n < 0:
-        return "Factorial is not defined for negative numbers."
-    result = 1
-    for i in range(1, n + 1):
-        result *= i
-    return result
+# #practice
+# n=int(input("enter any num: "))
+# i=1
+# total=0
+# while i<=n:
+#    total += i
+#    i += 1
+# print("the sum of number from 1 to",n,"is",total)
+# #for finding factorial
+# def factorial(n):
+#     if n < 0:
+#         return "Factorial is not defined for negative numbers."
+#     result = 1
+#     for i in range(1, n + 1):
+#         result *= i
+#     return result
 
-# Example usage
-print(factorial(6)) 
+# # Example usage
+# print(factorial(6)) 
 
-def fibonacci(n):
-    fib_sequence = []
-    a, b = 0, 1
-    for x in range(n):
-        fib_sequence.append(a)
-        a, b = b, a + b
-    return fib_sequence
+# def fibonacci(n):
+#     fib_sequence = []
+#     a, b = 0, 1
+#     for x in range(n):
+#         fib_sequence.append(a)
+#         a, b = b, a + b
+#     return fib_sequence
 
-# Example usage
-terms = int(input("Enter the number of terms: "))
-print(f"Fibonacci sequence up to {terms} terms:")
-print(fibonacci(terms))
+# # Example usage
+# terms = int(input("Enter the number of terms: "))
+# print(f"Fibonacci sequence up to {terms} terms:")
+# print(fibonacci(terms))
 
-#palindrome
-given_string = "madam"
+# pattern problems
+print("*")
+print("**")
+print("***")
+print("****")
+print("*****")
 
-reverse_string = ""
- 
-for i in given_string:
-    reverse_string = i + reverse_string  
- 
-if(given_string == reverse_string):
-   print("The string", given_string,"is a Palindrome.")
-    
-else:
-   print("The string",given_string,"is NOT a Palindrome.")
+for i in range(0,6):
+   #  (for printing straight stars)
+    for j in range(0,i): 
+      print("*")
+
+# for pattern 
+rows=5
+for i in range(1,rows+1):
+   print("*"*i)
+
+rows=5
+for i in range(rows,0,-1):
+   print("*"*i)
+# right align
+rows=5
+for i in range(1,rows+1):
+   spaces = rows - i
+   stars=i
+   print(" "*spaces+"*"*stars)
+# pyramid
+rows=5
+for i in range(1, rows+1):
+   spaces=rows-i
+   stars=2*i-1
+   print(" "*spaces+"*"*stars)

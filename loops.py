@@ -170,3 +170,24 @@ for i in range(1, rows+1):
    spaces=rows-i
    stars=2*i-1
    print(" "*spaces+"*"*stars)
+# number pyramid
+n = 5
+for i in range(1, n+1):
+    print(" " * (n - i) + str(i) * (2 * i - 1))
+# floyds pyramid
+n = 5
+num = 1
+for i in range(1, n+1):
+    for j in range(i):
+        print(num, end=" ")
+        num += 1
+    print()
+# pascal pyramid
+n = 5
+for i in range(n):
+    num = 1
+    print(" " * (n - i), end="")
+    for j in range(i + 1):
+        print(num, end=" ")
+        num = num * (i - j) // (j + 1)
+    print()

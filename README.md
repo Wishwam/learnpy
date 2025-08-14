@@ -1,11 +1,11 @@
-🐍 My First Python Project
+🐍 My First Python Repository
 
 Welcome! 
-This is a simple Python project created as part of my learning journey.
+This is a simple Python repository created as part of my learning journey.
 
 📌 About
 
-This project is built to practice Python basics like:
+This repository is built to practice Python basics like:
 - Variables and data types
 - If/else conditions
 - Loops (for, while)
